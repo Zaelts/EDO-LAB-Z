@@ -1,0 +1,98 @@
+{
+  "areas": [
+    {
+      "id": "matematicas",
+      "label": "Matemáticas",
+      "order": 1,
+      "subjects": [
+        {
+          "id": "calculo_diferencial",
+          "label": "Cálculo Diferencial",
+          "order": 1,
+          "topics": [
+            {
+              "id": "fundamentos_algebraicos",
+              "label": "Fundamentos algebraicos",
+              "order": 1,
+              "description": "Factorización, productos notables y simplificación algebraica.",
+              "status": "planned",
+              "prerequisites": []
+            },
+            {
+              "id": "funciones",
+              "label": "Funciones",
+              "order": 2,
+              "description": "Dominio, representación y comportamiento de funciones.",
+              "status": "planned",
+              "prerequisites": [
+                "Fundamentos algebraicos"
+              ]
+            },
+            {
+              "id": "limites",
+              "label": "Límites",
+              "order": 3,
+              "description": "Aproximación, límites laterales, existencia y relación entre límite y valor de la función.",
+              "status": "available",
+              "prerequisites": [
+                "Factorización",
+                "Simplificación algebraica",
+                "Concepto de función"
+              ]
+            },
+            {
+              "id": "continuidad",
+              "label": "Continuidad",
+              "order": 4,
+              "description": "Continuidad y tipos de discontinuidad.",
+              "status": "planned",
+              "prerequisites": [
+                "Límites"
+              ]
+            },
+            {
+              "id": "derivadas",
+              "label": "Derivadas",
+              "order": 5,
+              "description": "Razón de cambio y definición de derivada.",
+              "status": "planned",
+              "prerequisites": [
+                "Límites",
+                "Funciones"
+              ]
+            },
+            {
+              "id": "aplicaciones_derivada",
+              "label": "Aplicaciones de la derivada",
+              "order": 6,
+              "description": "Análisis y optimización.",
+              "status": "planned",
+              "prerequisites": [
+                "Derivadas"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "ecuaciones_diferenciales",
+          "label": "Ecuaciones Diferenciales",
+          "order": 2,
+          "topics": [
+            {
+              "id": "edo_primer_orden",
+              "label": "Aplicaciones de EDO de primer orden",
+              "order": 1,
+              "description": "Modelación y solución de problemas mediante EDO de primer orden.",
+              "status": "available",
+              "prerequisites": [
+                "Funciones",
+                "Derivación básica",
+                "Integración básica"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
