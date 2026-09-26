@@ -1,0 +1,123 @@
+{
+  "id": "caso_01_planta_limite",
+  "mission": "Misión 01",
+  "title": "La planta al límite",
+  "company": "Industrias Andinas S.A.S.",
+  "subtitle": "Dinámica de la demanda",
+  "briefing": [
+    "Industrias Andinas S.A.S. fabrica un producto de consumo con una línea cuya capacidad nominal es de 10.000 unidades por mes.",
+    "El área comercial reporta una demanda actual de 5.000 unidades mensuales y, a partir de los registros recientes, propone como escenario base un crecimiento continuo equivalente al 8 % mensual.",
+    "La gerencia de operaciones necesita anticipar cuándo la demanda podría alcanzar la capacidad disponible. Tu papel es transformar esta situación en un modelo, resolverlo, explorar escenarios y emitir una recomendación profesional."
+  ],
+  "data": {
+    "initial_demand": 5000,
+    "capacity": 10000,
+    "growth_rate": 0.08,
+    "time_unit": "mes",
+    "demand_unit": "unidades/mes"
+  },
+  "variable": {
+    "symbol": "D(t)",
+    "meaning": "demanda mensual en el tiempo t"
+  },
+  "model": {
+    "latex": "\\frac{dD}{dt}=0.08D",
+    "solution_general": "D(t)=Ce^{0.08t}",
+    "solution_particular": "D(t)=5000e^{0.08t}"
+  },
+  "decision_options": [
+    {
+      "id": "A",
+      "label": "Esperar hasta que la demanda alcance la capacidad y entonces iniciar la ampliación.",
+      "ending": "final_malo",
+      "title": "Capacidad rebasada",
+      "story": "La empresa reaccionó demasiado tarde. Mientras se aprobaba y ejecutaba la ampliación, la demanda prevista ya había alcanzado la capacidad. Se acumularon pedidos y aumentó el riesgo de incumplimiento.",
+      "lesson": "El modelo no solo estima un instante crítico: también ayuda a actuar antes de llegar a él. Una decisión operativa debe considerar el tiempo de implementación."
+    },
+    {
+      "id": "B",
+      "label": "Iniciar de inmediato una ampliación grande, suponiendo que el 8 % mensual continuará sin cambios.",
+      "ending": "final_intermedio",
+      "title": "Capacidad disponible, pero con alta exposición",
+      "story": "La empresa ganó margen de capacidad, pero comprometió recursos importantes basándose en un único escenario de crecimiento. La decisión reduce el riesgo de saturación, aunque aumenta la exposición si la tasa real cambia.",
+      "lesson": "La solución matemática es condicional a los supuestos. Antes de una inversión importante conviene comparar escenarios y reconocer la incertidumbre."
+    },
+    {
+      "id": "C",
+      "label": "Preparar un plan escalonado: analizar escenarios, definir un umbral de actuación y comenzar la preparación antes del punto de saturación.",
+      "ending": "final_favorable",
+      "title": "Decisión anticipada y adaptable",
+      "story": "Operaciones utilizó el modelo como señal temprana, contrastó varios escenarios y preparó acciones antes de alcanzar la capacidad. La empresa conserva margen para ajustar la inversión si cambia la demanda.",
+      "lesson": "El valor del modelo está en apoyar decisiones anticipadas, no en tratar una proyección como una certeza."
+    }
+  ],
+  "area": "Matemáticas",
+  "subject": "Ecuaciones Diferenciales",
+  "topic": "Aplicaciones de EDO de primer orden",
+  "difficulty": "Inicial",
+  "estimated_time": "15–20 min",
+  "learning_goals": [
+    "Traducir una situación contextual a variables y parámetros.",
+    "Construir un modelo de crecimiento proporcional.",
+    "Clasificar una EDO y justificar un método de solución.",
+    "Distinguir solución general, familia de soluciones y solución particular.",
+    "Relacionar función, pendiente y gráfica.",
+    "Usar el modelo como apoyo para una decisión."
+  ],
+  "modes": {
+    "didactic": {
+      "label": "LAB · Caso didáctico",
+      "graded": false,
+      "description": "Practica, recibe retroalimentación y aprende de los intentos. No genera calificación."
+    },
+    "evaluative": {
+      "label": "EVAL · Caso evaluativo",
+      "graded": true,
+      "description": "Demuestra lo aprendido con asistencia reducida. La rúbrica y la escala se muestran antes de comenzar.",
+      "grade_scale": 5.0,
+      "rubric": [
+        {
+          "key": "variables",
+          "label": "Comprensión y definición de variables",
+          "weight": 15
+        },
+        {
+          "key": "model",
+          "label": "Construcción del modelo diferencial",
+          "weight": 20
+        },
+        {
+          "key": "method",
+          "label": "Clasificación y elección del método",
+          "weight": 15
+        },
+        {
+          "key": "solution",
+          "label": "Resolución matemática",
+          "weight": 25
+        },
+        {
+          "key": "interpretation",
+          "label": "Análisis, simulación e interpretación",
+          "weight": 15
+        },
+        {
+          "key": "decision",
+          "label": "Decisión y justificación",
+          "weight": 10
+        }
+      ]
+    }
+  },
+  "diagnostic_feedback": {
+    "Segundo orden": "Revisa la derivada de mayor orden que aparece. ¿Ves alguna segunda derivada D''?",
+    "No lineal": "Observa cómo aparece D: está elevada a la primera potencia y no aparece multiplicada por D'.",
+    "Exacta en la forma mostrada": "Para hablar de exactitud conviene escribir M(t,D)dt + N(t,D)dD = 0 y comprobar derivadas parciales. Aquí primero identifica las propiedades visibles directamente.",
+    "missing_Primer orden": "Busca la derivada de mayor orden presente en el modelo.",
+    "missing_Lineal": "Intenta llevarla a la forma D' + P(t)D = Q(t).",
+    "missing_Separable": "Intenta reunir los términos con D junto a dD y los de t junto a dt."
+  },
+  "subject_id": "ecuaciones_diferenciales",
+  "topic_id": "edo_primer_orden",
+  "case_order": 1
+}

@@ -1,0 +1,84 @@
+{
+  "id": "caso_03_dos_lados_del_umbral",
+  "mission": "Misión 03",
+  "title": "Dos lados del umbral",
+  "company": "Centro de monitoreo térmico",
+  "area": "Matemáticas",
+  "subject": "Cálculo Diferencial",
+  "subject_id": "calculo_diferencial",
+  "topic": "Límites",
+  "topic_id": "limites",
+  "case_order": 2,
+  "difficulty": "Inicial–Intermedia",
+  "estimated_time": "15–20 min",
+  "case_type": "limit_sides",
+  "learning_goals": [
+    "Interpretar límites laterales en una situación de cambio de régimen.",
+    "Determinar cuándo existe un límite bilateral.",
+    "Analizar una función definida por tramos mediante tabla y gráfica.",
+    "Distinguir el valor de la función de los comportamientos laterales."
+  ],
+  "prerequisites": [
+    "Concepto intuitivo de límite",
+    "Lectura de gráficas",
+    "Concepto de función"
+  ],
+  "modes": {
+    "didactic": {
+      "label": "LAB · Caso didáctico",
+      "graded": false,
+      "description": "Explora qué ocurre cuando los límites laterales no coinciden. No genera calificación."
+    },
+    "evaluative": {
+      "label": "EVAL · Caso evaluativo",
+      "graded": true,
+      "description": "Analiza los límites laterales con asistencia reducida.",
+      "grade_scale": 5.0,
+      "rubric": [
+        {
+          "key": "left",
+          "label": "Interpretación del límite por la izquierda",
+          "weight": 20
+        },
+        {
+          "key": "right",
+          "label": "Interpretación del límite por la derecha",
+          "weight": 20
+        },
+        {
+          "key": "graph",
+          "label": "Lectura tabular y gráfica",
+          "weight": 20
+        },
+        {
+          "key": "existence",
+          "label": "Criterio de existencia del límite bilateral",
+          "weight": 25
+        },
+        {
+          "key": "context",
+          "label": "Interpretación de la situación real",
+          "weight": 15
+        }
+      ]
+    }
+  },
+  "scenario": {
+    "story": "Un sistema térmico cambia automáticamente de modo en t=5 min. Justo antes del cambio, el indicador se aproxima a 40 °C; inmediatamente después, el nuevo régimen parte cerca de 46 °C. El equipo debe decidir si puede hablarse de una única temperatura límite en el instante de transición.",
+    "switch": 5.0,
+    "left_target": 40.0,
+    "right_target": 46.0,
+    "left_times": [
+      4.0,
+      4.5,
+      4.9,
+      4.99
+    ],
+    "right_times": [
+      6.0,
+      5.5,
+      5.1,
+      5.01
+    ]
+  }
+}

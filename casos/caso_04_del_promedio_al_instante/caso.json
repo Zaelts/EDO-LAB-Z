@@ -1,0 +1,79 @@
+{
+  "id": "caso_04_del_promedio_al_instante",
+  "mission": "Misión 04",
+  "title": "Del promedio al instante",
+  "company": "Laboratorio de movilidad",
+  "area": "Matemáticas",
+  "subject": "Cálculo Diferencial",
+  "subject_id": "calculo_diferencial",
+  "topic": "Límites",
+  "topic_id": "limites",
+  "case_order": 3,
+  "difficulty": "Intermedia",
+  "estimated_time": "20–25 min",
+  "case_type": "derivative_limit",
+  "learning_goals": [
+    "Relacionar velocidad promedio con la pendiente de una recta secante.",
+    "Observar qué ocurre con el cociente incremental cuando h tiende a cero.",
+    "Interpretar la recta tangente como límite de rectas secantes.",
+    "Construir la definición de derivada a partir de un límite."
+  ],
+  "prerequisites": [
+    "Concepto intuitivo de límite",
+    "Límites laterales",
+    "Pendiente de una recta",
+    "Funciones"
+  ],
+  "modes": {
+    "didactic": {
+      "label": "LAB · Caso didáctico",
+      "graded": false,
+      "description": "Construye la idea de derivada a partir de velocidades promedio y límites. No genera calificación."
+    },
+    "evaluative": {
+      "label": "EVAL · Caso evaluativo",
+      "graded": true,
+      "description": "Construye e interpreta la derivada con asistencia reducida.",
+      "grade_scale": 5.0,
+      "rubric": [
+        {
+          "key": "average",
+          "label": "Cálculo e interpretación de velocidad promedio",
+          "weight": 20
+        },
+        {
+          "key": "secant",
+          "label": "Relación entre secante y cociente incremental",
+          "weight": 20
+        },
+        {
+          "key": "limit",
+          "label": "Interpretación del proceso h→0",
+          "weight": 25
+        },
+        {
+          "key": "tangent",
+          "label": "Interpretación de la pendiente tangente",
+          "weight": 20
+        },
+        {
+          "key": "definition",
+          "label": "Construcción de la definición de derivada",
+          "weight": 15
+        }
+      ]
+    }
+  },
+  "scenario": {
+    "story": "Un vehículo autónomo se desplaza en una pista de prueba. Su posición se modela por s(t)=t² metros. El equipo conoce velocidades promedio en intervalos, pero necesita estimar la velocidad exactamente en t=2 s sin disponer de un intervalo de duración cero.",
+    "function_latex": "s(t)=t^2",
+    "a": 2.0,
+    "h_values": [
+      2.0,
+      1.0,
+      0.5,
+      0.1,
+      0.01
+    ]
+  }
+}

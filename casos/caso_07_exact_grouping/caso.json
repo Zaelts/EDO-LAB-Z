@@ -1,0 +1,60 @@
+{
+  "id": "caso_07_exact_grouping",
+  "mission": "Misión 07",
+  "title": "Ajustes para conservar la calidad",
+  "company": "Línea de fabricación",
+  "area": "Matemáticas",
+  "subject": "Ecuaciones Diferenciales",
+  "subject_id": "ecuaciones_diferenciales",
+  "topic": "Ecuaciones exactas",
+  "topic_id": "ecuaciones_exactas",
+  "case_order": 3,
+  "difficulty": "Intermedia",
+  "estimated_time": "30–35 min",
+  "case_type": "exact_grouping",
+  "learning_goals": [
+    "Reconocer términos agrupables como diferenciales completas y resolver la ecuación exacta.",
+    "Relacionar una ecuación diferencial con un indicador de estado en un contexto de operación.",
+    "Explorar e interpretar la curva de nivel que fija una condición inicial."
+  ],
+  "prerequisites": [
+    "Derivadas parciales",
+    "Integración básica",
+    "Diferencial total"
+  ],
+  "modes": {
+    "didactic": {
+      "label": "LAB · Caso didáctico",
+      "graded": false,
+      "description": "Explora el contexto, verifica y resuelve con retroalimentación. No genera nota."
+    },
+    "evaluative": {
+      "label": "EVAL · Caso evaluativo",
+      "graded": true,
+      "description": "Resuelve el caso con asistencia reducida y rúbrica conocida.",
+      "grade_scale": 5.0,
+      "rubric": [
+        {
+          "key": "context",
+          "label": "Modelación e interpretación del contexto",
+          "weight": 20
+        },
+        {
+          "key": "verify",
+          "label": "Verificación de exactitud",
+          "weight": 25
+        },
+        {
+          "key": "solve",
+          "label": "Construcción de la función potencial",
+          "weight": 35
+        },
+        {
+          "key": "interpret",
+          "label": "Curva de nivel y condición inicial",
+          "weight": 20
+        }
+      ]
+    }
+  }
+}

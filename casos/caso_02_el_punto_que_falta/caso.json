@@ -1,0 +1,82 @@
+{
+  "id": "caso_02_el_punto_que_falta",
+  "mission": "Misión 02",
+  "title": "El punto que falta",
+  "company": "Laboratorio de análisis matemático",
+  "area": "Matemáticas",
+  "subject": "Cálculo Diferencial",
+  "subject_id": "calculo_diferencial",
+  "topic": "Límites",
+  "topic_id": "limites",
+  "case_order": 1,
+  "difficulty": "Inicial",
+  "estimated_time": "15–20 min",
+  "case_type": "limit_intro",
+  "learning_goals": [
+    "Interpretar un límite como comportamiento de una función cerca de un punto.",
+    "Explorar aproximaciones por izquierda y por derecha.",
+    "Distinguir entre el límite de una función y el valor de la función en el punto.",
+    "Decidir si un límite existe a partir de evidencia tabular y gráfica."
+  ],
+  "prerequisites": [
+    "Factorización",
+    "Simplificación algebraica",
+    "Concepto de función"
+  ],
+  "modes": {
+    "didactic": {
+      "label": "LAB · Caso didáctico",
+      "graded": false,
+      "description": "Explora el concepto de límite con tabla, gráfica y retroalimentación. No genera calificación."
+    },
+    "evaluative": {
+      "label": "EVAL · Caso evaluativo",
+      "graded": true,
+      "description": "Demuestra tu comprensión con asistencia reducida. La rúbrica se muestra antes de comenzar.",
+      "grade_scale": 5.0,
+      "rubric": [
+        {
+          "key": "concept",
+          "label": "Comprensión del concepto de límite",
+          "weight": 25
+        },
+        {
+          "key": "sides",
+          "label": "Interpretación de límites laterales",
+          "weight": 25
+        },
+        {
+          "key": "graph",
+          "label": "Lectura tabular y gráfica",
+          "weight": 20
+        },
+        {
+          "key": "distinction",
+          "label": "Distinción entre límite y valor de la función",
+          "weight": 20
+        },
+        {
+          "key": "conclusion",
+          "label": "Conclusión y justificación",
+          "weight": 10
+        }
+      ]
+    }
+  },
+  "scenario": {
+    "function_latex": "f(x)=\\frac{x^2-4}{x-2},\\qquad x\\neq 2",
+    "story": "Una expresión no puede evaluarse directamente en x=2. Tu tarea es estudiar qué ocurre con f(x) cuando x se aproxima a 2.",
+    "left": [
+      1.5,
+      1.9,
+      1.99,
+      1.999
+    ],
+    "right": [
+      2.5,
+      2.1,
+      2.01,
+      2.001
+    ]
+  }
+}
