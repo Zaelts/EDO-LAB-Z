@@ -11,7 +11,7 @@ DEFAULTS = {
     "attempts":{},"mistakes":{},"general_attempt":1,
     "eval_scores":{},"limit_step":1,"limit_done":False,"limit2_step":1,"limit2_done":False,"deriv_step":1,"deriv_done":False,
     "exact_step":1,"exact_done":False,
-    "factor_step":0,"factor_correct":0
+    "factor_step":0,"factor_correct":0,"factor_feedback":None,"factor_waiting_next":False
 }
 
 def init_state():

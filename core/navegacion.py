@@ -15,7 +15,8 @@ def sidebar(version,author,case):
             st.markdown(f"**{case['mission']} · Intento #{st.session_state.general_attempt}**")
             if case.get("case_type") == "factorization":
                 completed = st.session_state.factor_step
-                labels = ["Contexto"] + [f"Reto {i}" for i in range(1, 4)] + ["Informe"]
+                challenge_count = case.get("challenge_count", 3)
+                labels = ["Contexto"] + [f"Reto {i}" for i in range(1, challenge_count + 1)] + ["Informe"]
                 active = min(completed + 2, len(labels))
             else:
                 labels = STAGES
