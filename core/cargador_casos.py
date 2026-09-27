@@ -13,6 +13,11 @@ def listar_casos():
 
 @lru_cache(maxsize=32)
 def cargar_caso(case_id):
+    # Las sesiones de Streamlit pueden conservar el identificador anterior
+    # mientras se despliega una actualización. Mantén válida esa ruta durante
+    # la transición del caso de cubos a potencias del mismo exponente.
+    if case_id == "caso_14_suma_diferencia_cubos":
+        case_id = "caso_14_suma_diferencia_potencias"
     with open(BASE/case_id/"caso.json",encoding="utf-8") as f:return json.load(f)
 
 @lru_cache(maxsize=1)

@@ -3,12 +3,17 @@ import unittest
 from pathlib import Path
 
 from core.factorizacion import EJERCICIOS, LECCIONES, PISTAS
+from core.cargador_casos import cargar_caso
 
 
 ROOT = Path(__file__).resolve().parents[1]
 
 
 class FactorizationCurriculumTest(unittest.TestCase):
+    def test_previous_case_id_remains_valid_for_existing_sessions(self):
+        case = cargar_caso("caso_14_suma_diferencia_cubos")
+        self.assertEqual(case["id"], "caso_14_suma_diferencia_potencias")
+
     def test_factorization_topic_has_seven_cases_and_matching_exercise_sets(self):
         with (ROOT / "casos" / "curriculo.json").open(encoding="utf-8") as file:
             curriculum = json.load(file)
