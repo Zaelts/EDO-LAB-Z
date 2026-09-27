@@ -1,0 +1,9 @@
+{
+  "id": "caso_14_suma_diferencia_cubos", "mission": "Matemática básica · Caso 07", "title": "Descomponer una suma o diferencia de volúmenes", "company": "Estudio de prototipos tridimensionales",
+  "area": "Matemáticas", "subject": "Matemática básica", "subject_id": "matematica_basica", "topic": "Factorización", "topic_id": "factorizacion", "case_order": 7,
+  "case_type": "factorization", "variant_set": "cubos", "difficulty": "Intermedia", "estimated_time": "10–15 min",
+  "context": "En modelos de volumen, las raíces cúbicas identifican las medidas base. Las identidades permiten expresar una suma o diferencia de cubos como un binomio por un trinomio. Los coeficientes son ilustrativos.",
+  "report": "a³+b³=(a+b)(a²−ab+b²) y a³−b³=(a−b)(a²+ab+b²). El signo del binomio coincide con la operación original; el trinomio conserva términos cuadrados positivos y el signo central cambia.",
+  "learning_goals": ["Reconocer raíces cúbicas exactas en coeficientes y variables.", "Distinguir las fórmulas de suma y diferencia de cubos.", "Conservar el patrón de signos y comprobar por expansión."], "prerequisites": ["Potencias cúbicas", "Productos notables"],
+  "modes": {"didactic": {"label":"LAB · Caso didáctico","graded":false,"description":"Practica con pistas y retroalimentación; no genera nota."}, "evaluative": {"label":"EVAL · Caso evaluativo","graded":true,"description":"Resuelve tres variantes con asistencia reducida.","grade_scale":5.0,"rubric":[{"key":"factor_0","label":"Raíces cúbicas","weight":34},{"key":"factor_1","label":"Identidad de suma o diferencia","weight":33},{"key":"factor_2","label":"Patrón de signos","weight":33}]}}
+}

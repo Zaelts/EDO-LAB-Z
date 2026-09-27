@@ -1,0 +1,9 @@
+{
+  "id": "caso_10_trinomio_cuadrado", "mission": "Matemática básica · Caso 03", "title": "Un cuadrado perfecto en el diseño", "company": "Estudio de superficies",
+  "area": "Matemáticas", "subject": "Matemática básica", "subject_id": "matematica_basica", "topic": "Factorización", "topic_id": "factorizacion", "case_order": 3,
+  "case_type": "factorization", "variant_set": "trinomio_cuadrado", "difficulty": "Inicial–Intermedia", "estimated_time": "10–15 min",
+  "context": "Para reconocer un área cuadrada se comparan los términos extremos con los cuadrados de dos medidas y el término medio con el doble de su producto. Los modelos son algebraicos e ilustrativos.",
+  "report": "Un trinomio cuadrado perfecto tiene extremos que son cuadrados y un término medio igual a más o menos el doble producto de sus raíces. El signo de ese término determina el signo dentro del binomio repetido.",
+  "learning_goals": ["Reconocer cuadrados en los términos extremos.", "Verificar que el término medio sea el doble producto.", "Distinguir el signo positivo del negativo en el binomio."], "prerequisites": ["Productos notables", "Exponentes pares"],
+  "modes": {"didactic": {"label":"LAB · Caso didáctico","graded":false,"description":"Practica con pistas y retroalimentación; no genera nota."}, "evaluative": {"label":"EVAL · Caso evaluativo","graded":true,"description":"Resuelve tres variantes con asistencia reducida.","grade_scale":5.0,"rubric":[{"key":"factor_0","label":"Raíces de los extremos","weight":34},{"key":"factor_1","label":"Verificación del término medio","weight":33},{"key":"factor_2","label":"Signo del binomio","weight":33}]}}
+}

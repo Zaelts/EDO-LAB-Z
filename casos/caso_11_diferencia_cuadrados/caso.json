@@ -1,0 +1,9 @@
+{
+  "id": "caso_11_diferencia_cuadrados", "mission": "Matemática básica · Caso 04", "title": "La diferencia entre dos áreas", "company": "Centro de prototipos",
+  "area": "Matemáticas", "subject": "Matemática básica", "subject_id": "matematica_basica", "topic": "Factorización", "topic_id": "factorizacion", "case_order": 4,
+  "case_type": "factorization", "variant_set": "diferencia_cuadrados", "difficulty": "Inicial–Intermedia", "estimated_time": "10–15 min",
+  "context": "Al comparar dos superficies cuadradas, su diferencia puede escribirse como producto de una suma y una diferencia. Los ejemplos usan variables y coeficientes ilustrativos.",
+  "report": "La identidad a²−b²=(a−b)(a+b) solo se aplica a una resta de cuadrados perfectos. No se factoriza como diferencia de cuadrados una suma de cuadrados; los exponentes y coeficientes deben tener raíces exactas en el conjunto considerado.",
+  "learning_goals": ["Comprobar que hay una resta de dos cuadrados.", "Extraer correctamente las raíces de coeficientes y potencias pares.", "Aplicar los factores conjugados y distinguir suma de diferencia."], "prerequisites": ["Potencias y raíces", "Productos de binomios conjugados"],
+  "modes": {"didactic": {"label":"LAB · Caso didáctico","graded":false,"description":"Practica con pistas y retroalimentación; no genera nota."}, "evaluative": {"label":"EVAL · Caso evaluativo","graded":true,"description":"Resuelve tres variantes con asistencia reducida.","grade_scale":5.0,"rubric":[{"key":"factor_0","label":"Reconocimiento de cuadrados","weight":34},{"key":"factor_1","label":"Raíces y exponentes","weight":33},{"key":"factor_2","label":"Factores conjugados y signos","weight":33}]}}
+}

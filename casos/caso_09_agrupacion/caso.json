@@ -1,0 +1,9 @@
+{
+  "id": "caso_09_agrupacion", "mission": "Matemática básica · Caso 02", "title": "Agrupar para descubrir una medida común", "company": "Laboratorio de mosaicos",
+  "area": "Matemáticas", "subject": "Matemática básica", "subject_id": "matematica_basica", "topic": "Factorización", "topic_id": "factorizacion", "case_order": 2,
+  "case_type": "factorization", "variant_set": "agrupacion", "difficulty": "Inicial–Intermedia", "estimated_time": "10–15 min",
+  "context": "Al combinar piezas de varios módulos, una suma de términos puede ocultar un mismo binomio. Reordenar y agrupar permite descubrir dos dimensiones compartidas. Los coeficientes son ilustrativos.",
+  "report": "En la agrupación se forman grupos cuyos factores comunes producen el mismo binomio. Es esencial mantener el orden de los términos y los signos para que aparezca el factor común agrupado.",
+  "learning_goals": ["Agrupar términos de forma estratégica.", "Extraer factores comunes parciales.", "Conservar signos y reconocer el binomio común."], "prerequisites": ["Factor común", "Distributividad"],
+  "modes": {"didactic": {"label":"LAB · Caso didáctico","graded":false,"description":"Practica con pistas y retroalimentación; no genera nota."}, "evaluative": {"label":"EVAL · Caso evaluativo","graded":true,"description":"Resuelve tres variantes con asistencia reducida.","grade_scale":5.0,"rubric":[{"key":"factor_0","label":"Selección de grupos","weight":34},{"key":"factor_1","label":"Factor común por grupo","weight":33},{"key":"factor_2","label":"Signos y resultado equivalente","weight":33}]}}
+}

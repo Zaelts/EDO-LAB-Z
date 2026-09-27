@@ -13,9 +13,16 @@ def sidebar(version,author,case):
         if st.session_state.mission_started:
             st.markdown("---")
             st.markdown(f"**{case['mission']} · Intento #{st.session_state.general_attempt}**")
-            for i,x in enumerate(STAGES,1):
-                css="done" if i<st.session_state.stage else ("active" if i==st.session_state.stage else "")
-                icon="✓" if i<st.session_state.stage else ("●" if i==st.session_state.stage else "○")
+            if case.get("case_type") == "factorization":
+                completed = st.session_state.factor_step
+                labels = ["Contexto"] + [f"Reto {i}" for i in range(1, 4)] + ["Informe"]
+                active = min(completed + 2, len(labels))
+            else:
+                labels = STAGES
+                active = st.session_state.stage
+            for i,x in enumerate(labels,1):
+                css="done" if i<active else ("active" if i==active else "")
+                icon="✓" if i<active else ("●" if i==active else "○")
                 st.markdown(f'<div class="step {css}">{icon} {x}</div>',unsafe_allow_html=True)
         st.markdown("---")
         st.caption(f"Versión {version}")

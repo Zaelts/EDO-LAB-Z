@@ -103,6 +103,21 @@
               ]
             }
           ]
+        },
+        {
+          "id": "matematica_basica",
+          "label": "Matemática básica",
+          "order": 3,
+          "topics": [
+            {
+              "id": "factorizacion",
+              "label": "Factorización",
+              "order": 1,
+              "description": "Métodos de factorización, sus variantes de signos, coeficientes y exponentes, y su interpretación en modelos contextualizados.",
+              "status": "available",
+              "prerequisites": ["Operaciones con expresiones algebraicas y leyes de exponentes"]
+            }
+          ]
         }
       ]
     }

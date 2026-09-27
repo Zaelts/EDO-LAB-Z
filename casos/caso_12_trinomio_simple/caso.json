@@ -1,0 +1,9 @@
+{
+  "id": "caso_12_trinomio_simple", "mission": "Matemática básica · Caso 05", "title": "Dos medidas a partir de un trinomio", "company": "Taller de espacios",
+  "area": "Matemáticas", "subject": "Matemática básica", "subject_id": "matematica_basica", "topic": "Factorización", "topic_id": "factorizacion", "case_order": 5,
+  "case_type": "factorization", "variant_set": "trinomio_simple", "difficulty": "Intermedia", "estimated_time": "10–15 min",
+  "context": "Una expresión de área rectangular con coeficiente principal 1 puede revelar sus lados mediante dos números que cumplen simultáneamente una suma y un producto. Los ejemplos son modelos didácticos.",
+  "report": "Para x²+bx+c se buscan dos números cuyo producto sea c y cuya suma sea b. Si c es positivo, los signos coinciden; si es negativo, son opuestos. El signo de b determina cuál suma algebraica se necesita.",
+  "learning_goals": ["Buscar dos números por producto y suma.", "Resolver variantes con término independiente positivo o negativo.", "Determinar los signos de los binomios a partir de b y c."], "prerequisites": ["Operaciones con enteros", "Producto de binomios"],
+  "modes": {"didactic": {"label":"LAB · Caso didáctico","graded":false,"description":"Practica con pistas y retroalimentación; no genera nota."}, "evaluative": {"label":"EVAL · Caso evaluativo","graded":true,"description":"Resuelve tres variantes con asistencia reducida.","grade_scale":5.0,"rubric":[{"key":"factor_0","label":"Relación suma y producto","weight":34},{"key":"factor_1","label":"Signos según el término independiente","weight":33},{"key":"factor_2","label":"Selección de binomios","weight":33}]}}
+}

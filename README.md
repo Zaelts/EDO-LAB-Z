@@ -1,12 +1,13 @@
-# EDO·LAB Z — Z-V5.25.09.2026
+# EDO·LAB Z — Z-V5.27.09.2026
 
-Aplicación educativa de matemáticas en Python, Streamlit y Plotly. Incluye la ruta de Límites y cuatro casos de Ecuaciones Diferenciales, tres de ellos dedicados a ecuaciones exactas. Conserva los modos LAB (práctica) y EVAL (rúbrica y nota).
+Aplicación educativa de matemáticas en Python, Streamlit y Plotly. Incluye la ruta de Límites, cuatro casos de Ecuaciones Diferenciales (tres dedicados a ecuaciones exactas) y siete casos de factorización en Matemática básica. Conserva los modos LAB (práctica) y EVAL (rúbrica y nota).
 
 ## Novedades de esta entrega
 
 - Explicación y experimento interactivo del límite bilateral: dos controles permiten hacer coincidir o separar los destinos laterales.
 - Gráficas con azul continuo y naranja discontinuo, más etiquetas de dirección. Los huecos usan un círculo grande con centro oscuro y borde amarillo visible. En el caso térmico, `T(5)=46 °C` aparece como **punto lleno**; el destino izquierdo `40 °C`, como **círculo abierto**.
 - Tres casos de ecuaciones exactas: obtención de un modelo de costo y verificación; reconstrucción por integración de un indicador de mezcla; solución por agrupación de un índice de calidad. Los escenarios usan variables e índices **normalizados** y coeficientes ilustrativos, no datos reales de una planta.
+- Nueva asignatura **Matemática básica** con el tema **Factorización** y siete casos: factor común, agrupación, trinomio cuadrado perfecto, diferencia de cuadrados, trinomio mónico, trinomio con coeficiente principal distinto de 1, y suma/diferencia de cubos. Cada caso propone tres ejercicios con variantes de signos, coeficientes y exponentes; LAB incluye pistas y retroalimentación, y EVAL usa rúbrica.
 
 ## Abrir y ejecutar en Windows
 
@@ -33,8 +34,9 @@ Una primera petición útil para Codex:
 
 - `app.py`: navegación, límites, EDO de crecimiento e informes anteriores.
 - `core/exactas.py`: tres misiones de ecuaciones exactas y sus curvas de nivel.
+- `core/factorizacion.py`: banco de variantes algebraicas y flujo de los siete casos de factorización.
 - `core/limites.py`, `core/limites_avanzados.py`: tablas y gráficas de límites.
-- `casos/curriculo.json` y `casos/caso_*/caso.json`: ruta y fichas de misiones.
+- `casos/curriculo.json` y `casos/caso_*/caso.json`: ruta y fichas de misiones; las variantes de factorización se identifican allí y sus ejercicios residen en `core/factorizacion.py`.
 - `tests/test_exactas.py`: comprobaciones de potencial, derivadas cruzadas y condiciones iniciales.
 
 Para comprobar las matemáticas desde la raíz del proyecto:

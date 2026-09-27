@@ -6,8 +6,9 @@ from core.simulacion import demanda,derivada,tiempo_capacidad,figura_simulacion
 from core.limites import tabla as tabla_limites, figura as figura_limites, recta_numerica, figura_bilateral_interactiva
 from core.limites_avanzados import thermal_table,thermal_figure,derivative_table,derivative_figure,secant_slope
 from core.exactas import exact_mission, exact_report
+from core.factorizacion import factorization_mission, factorization_report
 
-VERSION="Z-V5.25.09.2026"
+VERSION="Z-V5.27.09.2026"
 AUTHOR="Yeison J. Aragón"
 EMAIL="yjab08@gmail.com"
 
@@ -338,6 +339,7 @@ La estrategia será usar límites: calcularemos velocidades promedio en interval
                 st.session_state.finished=True;st.session_state.page="Informes";st.rerun()
 
 def mission():
+    if case.get("case_type") == "factorization": return factorization_mission(case)
     if case.get("case_type")=="limit_intro": return limits_mission()
     if case.get("case_type")=="limit_sides": return limits_sides_mission()
     if case.get("case_type")=="derivative_limit": return derivative_limit_mission()
@@ -511,6 +513,7 @@ def progress():
 
 def reports():
     st.header(f"Tu informe de misión, {st.session_state.student_name}")
+    if case.get("case_type") == "factorization": return factorization_report(case)
     if case.get("case_type"," ").startswith("exact_"): return exact_report(case)
     if case.get("case_type") in {"limit_sides","derivative_limit"}:
         if not st.session_state.finished:

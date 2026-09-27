@@ -1,0 +1,10 @@
+{
+  "id": "caso_08_factor_comun", "mission": "Matemática básica · Caso 01", "title": "El factor que comparten los paneles", "company": "Taller de diseño modular",
+  "area": "Matemáticas", "subject": "Matemática básica", "subject_id": "matematica_basica", "topic": "Factorización", "topic_id": "factorizacion", "case_order": 1,
+  "case_type": "factorization", "variant_set": "factor_comun", "difficulty": "Inicial", "estimated_time": "10–15 min",
+  "context": "Un taller compara expresiones de área y de material para lotes con distintos tamaños. Extraer el máximo factor común permite ver qué cantidad o medida se repite en todos los términos. Los coeficientes son ejemplos algebraicos didácticos.",
+  "report": "Extraer el factor común conserva el valor de la expresión y muestra la parte compartida. Para variables, se usa el menor exponente que aparece en todos los términos; también hay que conservar cada signo.",
+  "learning_goals": ["Identificar el máximo factor numérico y literal común.", "Extraer variables con el menor exponente compartido.", "Factorizar expresiones con signos positivos y negativos y comprobar por distributividad."],
+  "prerequisites": ["Leyes de exponentes", "Distributividad"],
+  "modes": {"didactic": {"label":"LAB · Caso didáctico","graded":false,"description":"Practica con pistas y retroalimentación; no genera nota."}, "evaluative": {"label":"EVAL · Caso evaluativo","graded":true,"description":"Resuelve tres variantes con asistencia reducida.","grade_scale":5.0,"rubric":[{"key":"factor_0","label":"Identificación del factor común","weight":34},{"key":"factor_1","label":"Manejo de signos","weight":33},{"key":"factor_2","label":"Exponentes y factorización completa","weight":33}]}}
+}

@@ -1,0 +1,9 @@
+{
+  "id": "caso_13_trinomio_general", "mission": "Matemática básica · Caso 06", "title": "El coeficiente principal también cuenta", "company": "Laboratorio de empaques",
+  "area": "Matemáticas", "subject": "Matemática básica", "subject_id": "matematica_basica", "topic": "Factorización", "topic_id": "factorizacion", "case_order": 6,
+  "case_type": "factorization", "variant_set": "trinomio_general", "difficulty": "Intermedia", "estimated_time": "10–15 min",
+  "context": "Al expresar un área con una escala distinta en cada dimensión, aparece un coeficiente principal diferente de 1. Los términos cruzados permiten comprobar la factorización propuesta.",
+  "report": "En ax²+bx+c, con a distinto de 1, los factores deben reproducir a y c en los términos extremos, mientras los productos cruzados suman exactamente bx. Verificar la expansión ayuda a detectar errores de signos.",
+  "learning_goals": ["Factorizar trinomios con coeficiente principal distinto de 1.", "Comprobar los productos cruzados y el término constante.", "Manejar combinaciones de signos positivos y negativos."], "prerequisites": ["Producto de binomios", "Descomposición de números enteros"],
+  "modes": {"didactic": {"label":"LAB · Caso didáctico","graded":false,"description":"Practica con pistas y retroalimentación; no genera nota."}, "evaluative": {"label":"EVAL · Caso evaluativo","graded":true,"description":"Resuelve tres variantes con asistencia reducida.","grade_scale":5.0,"rubric":[{"key":"factor_0","label":"Coeficientes principales","weight":34},{"key":"factor_1","label":"Productos cruzados","weight":33},{"key":"factor_2","label":"Control de signos","weight":33}]}}
+}
